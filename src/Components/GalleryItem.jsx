@@ -44,7 +44,7 @@ function GalleryItem(props) {
     return (
         <div onClick={() => setViewDetails(!viewDetails)} style={{
         display: 'inline-block' }}>
-            <p>Gallery Item</p>
+            {viewDetails ? detailsView() : simpleView()}
         </div>
     )
 }
